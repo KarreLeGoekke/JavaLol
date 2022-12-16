@@ -1,0 +1,50 @@
+body{
+    margin: 0rem;
+    background-color: rgb(32, 32, 32);
+}
+
+.headerText{
+    user-select: none;
+    font-size: 64px;
+    font-family: 'Segoe UI';
+    font-weight: bolder;
+    text-align: center;
+    margin: 1rem;
+    color: rgb(64, 64, 64);
+}
+
+.grid{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem 2rem;
+}
+
+.gridItem{
+    width: 10rem;
+    background-image: linear-gradient(rgb(31, 31, 31), rgb(56, 56, 56));
+    border: 0.25rem solid rgb(116, 116, 116);
+    box-shadow: inset 0px 0px 15px 15px rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+    transition: cubic-bezier();
+    transition-duration: 125ms;
+}
+
+.gridItem:hover{
+    transform: scale(1.01);
+}
+
+.gridItem:active{
+    transform: scale(0.99);
+}
+
+.gridItemText{
+    font-size: 2rem;
+    font-family: 'Segoe UI';
+    font-weight: lighter;
+    text-align: center;
+    color: white;
+    user-select: none;
+    margin-top: 3.5rem;
+    margin-bottom: 3.5rem;
+}
